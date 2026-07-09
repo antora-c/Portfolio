@@ -279,6 +279,64 @@ section{padding:74px 0}
 .stress{margin-top:18px;font-family:"JetBrains Mono";font-size:.78rem;color:var(--ink-soft);background:var(--blue-soft);border:1px dashed var(--blue-line);border-radius:10px;padding:12px 14px}
 .stress b{color:var(--blue)}
 
+/* patient workspace (case 01) */
+.pw{min-width:720px;background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:0 1px 2px rgba(20,22,46,.04),0 18px 40px -28px rgba(20,22,46,.28)}
+.pw-head{padding:16px 18px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fbfbfe,#fff)}
+.pw-id{display:flex;align-items:center;gap:12px}
+.pw-av{width:38px;height:38px;border-radius:10px;background:var(--nav);color:#fff;display:grid;place-items:center;font-family:"Space Grotesk";font-weight:600;font-size:.95rem;flex:none}
+.pw-name{font-family:"Space Grotesk";font-weight:600;font-size:1.02rem;color:var(--ink);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.pw-case{font-family:"DM Sans";font-weight:500;font-size:.74rem;color:var(--ink-soft);border:1px solid var(--line);border-radius:20px;padding:3px 10px;display:inline-flex;align-items:center;gap:7px}
+.pw-case b{color:var(--green);font-weight:600}
+.pw-meta{font-size:.78rem;color:var(--muted);margin-top:3px}
+.pw-ai{display:flex;gap:9px;align-items:flex-start;margin-top:12px;font-size:.85rem;color:var(--ink-soft);line-height:1.45}
+.pw-ai b{color:var(--ink)}
+.pw-spark{flex:none;margin-top:1px}
+.pw-spark svg{width:16px;height:16px}
+.pw-focus{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.pw-chip{font-size:.74rem;font-weight:500;padding:4px 10px;border-radius:8px;display:inline-flex;align-items:center;gap:6px}
+.pw-chip::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.pw-chip.warn{color:var(--amber);background:var(--amber-bg)}
+.pw-chip.crit{color:var(--red);background:var(--red-bg)}
+#pwBody{padding:16px 18px}
+.pw-al{font-family:"JetBrains Mono";font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.pw-actions{margin-bottom:16px}
+.pw-act{display:flex;align-items:center;gap:12px;padding:11px 13px;border:1px solid var(--line);border-radius:10px;margin-bottom:8px}
+.pw-act.crit{border-left:3px solid var(--red)}
+.pw-act.warn{border-left:3px solid var(--amber)}
+.pw-mk{width:9px;height:9px;border-radius:50%;flex:none}
+.pw-mk.info{background:var(--slate)}.pw-mk.warn{background:var(--amber)}.pw-mk.crit{background:var(--red)}
+.pw-at{font-weight:600;font-size:.9rem;color:var(--ink)}
+.pw-as{font-size:.78rem;color:var(--muted);margin-top:2px}
+.pw-go{margin-left:auto;font-size:.76rem;font-weight:600;color:#fff;background:var(--ink);border-radius:7px;padding:6px 11px}
+.pw-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.pw-card{border:1px solid var(--line);border-top:2px solid var(--slate);border-radius:10px;padding:12px 13px}
+.pw-ct{font-family:"JetBrains Mono";font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.pw-cv{font-family:"Space Grotesk";font-weight:600;font-size:1.02rem;color:var(--ink);line-height:1.1}
+.pw-cs{font-size:.76rem;color:var(--muted);margin-top:4px}
+.pw-cs.amber{color:var(--amber)}
+.pw-tlmonth{font-family:"JetBrains Mono";font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:6px 0 8px}
+.pw-tlrow{display:flex;gap:12px;padding:9px 0;border-top:1px solid var(--line-2)}
+.pw-tl .pw-tlrow:first-child{border-top:none}
+.pw-tlrow .pw-mk{margin-top:5px}
+.pw-tlbody{flex:1;min-width:0}
+.pw-tltop{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.pw-tltitle{font-weight:500;font-size:.88rem;color:var(--ink)}
+.pw-tldate{font-family:"JetBrains Mono";font-size:.72rem;color:var(--muted)}
+.pw-tlmeta{display:flex;gap:6px;margin-top:5px}
+.pw-tag{font-size:.66rem;font-weight:500;padding:2px 8px;border-radius:6px;color:var(--muted);background:#f2f3f6}
+.pw-tag.case{color:var(--accent);background:var(--accent-soft)}
+.pw-tblw{border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.pw-tbl{width:100%;border-collapse:collapse;font-size:.82rem}
+.pw-tbl th{text-align:left;background:#fafbfc;color:var(--muted);font-family:"JetBrains Mono";font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;padding:9px 12px;border-bottom:1px solid var(--line-2)}
+.pw-tbl td{padding:9px 12px;border-bottom:1px solid var(--line-2);color:var(--ink)}
+.pw-tbl tr:last-child td{border-bottom:none}
+.pw-tbl td.mono{font-family:"JetBrains Mono";font-size:.76rem;color:var(--ink-soft)}
+.deepdive{margin-top:26px;font-size:.92rem;color:var(--muted);border-top:1px solid var(--line);padding-top:18px}
+.deepdive a{color:var(--blue);font-weight:600;text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s}
+.deepdive a:hover{border-bottom-color:var(--blue)}
+@media(max-width:680px){.pw-cards{grid-template-columns:1fr}}
+@media print{.pw{min-width:0;box-shadow:none}.deepdive a{color:#000}}
+
 /* approach */
 .approach{background:var(--ink);color:#dfe2f1}
 .approach .eyebrow{color:#8e94c0}
@@ -457,11 +515,103 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offse
       <div class="sec-head rv">
         <h2 class="sec-title">Selected work</h2>
       </div>
-      <p class="sec-sub rv">Two projects, chosen because they show the thinking, not just the pixels. Both are live and interactive below.</p>
+      <p class="sec-sub rv">Three projects, chosen because they show the thinking, not just the pixels. Each is live and interactive below.</p>
 
-      <!-- CASE 01 : UBD -->
+      <!-- CASE 01 : PATIENT TIMELINE / MICROSITE -->
       <article class="case rv">
-        <div class="case-tag">Case 01 · Spry Unified Billing Dashboard</div>
+        <div class="case-tag">Case 01 · Patient Timeline &amp; Microsite Redesign</div>
+        <h3>A patient record is a microsite, not a timeline.</h3>
+        <p class="case-blurb">
+          Spry's patient view was a chronological activity log: everything that ever happened, newest-first, in backend language. I audited it, argued the timeline shouldn't be the front door at all, validated the hard calls with real roles, and rebuilt it into a case-aware, role-adaptive workspace. The timeline became the archive you dig up, not the page you open every morning.
+        </p>
+
+        <div class="facts">
+          <div><div class="k">My role</div><div class="v">Product design &amp; ownership, audit to Figma handoff</div></div>
+          <div><div class="k">Surface</div><div class="v">Patient chart / microsite (EMR + Billing + RCM)</div></div>
+          <div><div class="k">Contribution</div><div class="v">UX audit, IA, entity modeling, PRD, prototype</div></div>
+          <div><div class="k">Shipped</div><div class="v">Six-tab workspace, case-first adaptive timeline</div></div>
+        </div>
+
+        <p class="demo-cap"><b>// Try it.</b> The same patient, three lenses. Identity and today's priorities stay pinned; the timeline is just one view you can switch to, not the homepage.</p>
+
+        <div class="segwrap">
+          <div class="seg" id="pwSeg">
+            <button class="on" data-surf="summary">What matters today</button>
+            <button data-surf="timeline">Timeline</button>
+            <button data-surf="table">Table</button>
+          </div>
+          <span class="seg-label" id="pwLabel"></span>
+        </div>
+
+        <div class="os-scroll">
+          <div class="pw">
+            <div class="pw-head">
+              <div class="pw-id">
+                <div class="pw-av">JR</div>
+                <div>
+                  <div class="pw-name">Jordan Rivera <span class="pw-case">Post-op PT · Right ACL <b>Active</b></span></div>
+                  <div class="pw-meta">MRN 48213 · DOB 03/12/1979 · 2 active cases</div>
+                </div>
+              </div>
+              <div class="pw-ai">
+                <span class="pw-spark"><svg viewBox="0 0 20 20" fill="#6d28d9"><path d="M10 2l1.5 4.5L16 8l-4.5 1.5L10 14 8.5 9.5 4 8l4.5-1.5z"/></svg></span>
+                <span><b>Patient overview.</b> ACL case on track. Back-pain authorization expires in 2 visits. One denied claim awaiting appeal.</span>
+              </div>
+              <div class="pw-focus">
+                <span class="pw-chip warn">Auth expiring · 2 visits left</span>
+                <span class="pw-chip crit">Claim denied · needs appeal</span>
+              </div>
+            </div>
+            <div class="os-fade" id="pwBody"></div>
+          </div>
+        </div>
+
+        <div class="moves">
+          <div class="move">
+            <div class="mi">P1</div>
+            <div>
+              <h4>Audit before redesign</h4>
+              <p>I refused to treat it as a visual refresh. The old timeline communicated system output, not human meaning: payments, refunds, and totals looked identical; the UI said "Descending" where a person means "Newest first"; events shared a timestamp with no order or causality; and money, the one thing that matters in billing, had no visual priority.</p>
+            </div>
+          </div>
+          <div class="move">
+            <div class="mi">P2</div>
+            <div>
+              <h4>Question the paradigm, not just the pixels</h4>
+              <p>A timeline answers "what happened." The daily question is "what do I do now." Polish can't fix a paradigm mismatch, so the fix had to be structural.</p>
+              <p class="q">If this is a patient microsite, the timeline can't be the homepage. It's the archive.</p>
+              <p>Identity and state stay pinned, an AI "what matters today" summary becomes the primary surface, and timeline, table, and cards become interchangeable views on the same data rather than the product itself.</p>
+            </div>
+          </div>
+          <div class="move">
+            <div class="mi">P3</div>
+            <div>
+              <h4>Resolve the patient-vs-case fork with users, not taste</h4>
+              <p>A patient can carry concurrent episodes (post-op ACL and chronic low back pain). Case-only is clinically clean but hides total balance and can bury a denial in an inactive case; patient-anchored gives financial visibility at the cost of complexity. I built both, stress-tested each against a biller's real day with behavioral questions like "what's the first screen a biller opens," and landed on case-first by default with an explicit "All patient activity" toggle. The tension isn't removed; it's handed to the user as a control.</p>
+            </div>
+          </div>
+          <div class="move">
+            <div class="mi">P4</div>
+            <div>
+              <h4>Some missing UI was actually missing data</h4>
+              <p>Authorization needed to be a real object with expiry and status, not "4 of 12 visits." Plan of Care needed its own lifecycle. Claims needed a real state machine (Draft → Submitted → Denied → Appealed → Paid). And nobody owned a denied claim or an expiring auth, so I added an assignment model and a Critical / Warning / Info severity system. This is where it stopped being a screen redesign and became system design.</p>
+            </div>
+          </div>
+          <div class="move">
+            <div class="mi">P5</div>
+            <div>
+              <h4>Role adapts defaults, not layouts</h4>
+              <p>Therapist opens to Clinical, biller to Billing, admin to everything, but it's one workspace with different sections expanded, never separate builds per role. The same discipline drives the bracket system in the next case: one system that scales beats many forks that drift.</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="deepdive">The full interactive case study walks the audit, the entity model, and the working six-tab workspace (ledger lenses, filterable activity) in detail. <a href="case-patient-workspace.html">Open the deep dive →</a></p>
+      </article>
+
+      <!-- CASE 02 : UBD -->
+      <article class="case rv" style="margin-top:46px">
+        <div class="case-tag">Case 02 · Spry Unified Billing Dashboard</div>
         <h3>One billing workspace that reconfigures itself for seven kinds of practice.</h3>
         <p class="case-blurb">
           Spry sells software and services in different combinations. A practice might run everything in-house, or hand claims to Spry's RCM team, or buy nothing but eligibility verification. Instead of forking the product into seven builds, I designed a single system that changes shape based on what each practice actually owns.
@@ -539,9 +689,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offse
         </div>
       </article>
 
-      <!-- CASE 02 : SPRY VERIFY -->
+      <!-- CASE 03 : SPRY VERIFY -->
       <article class="case rv" style="margin-top:46px">
-        <div class="case-tag">Case 02 · SPRY Verify, eligibility &amp; prior-auth triage</div>
+        <div class="case-tag">Case 03 · SPRY Verify, eligibility &amp; prior-auth triage</div>
         <h3>Turning three flat lists into one prioritized triage surface.</h3>
         <p class="case-blurb">
           SPRY Verify is where verification coordinators start their day and return between tasks. It has to answer one question fast: <i>what do I act on, and in what order?</i> The first version showed everything at equal weight. Over seven iterations I rebuilt it around hierarchy, ownership, and priority.
@@ -920,6 +1070,63 @@ function setBA(v){
 }
 baSeg.addEventListener('click',e=>{const b=e.target.closest('button');if(b)setBA(b.dataset.v);});
 setBA('final');
+
+/* ---------- patient workspace (case 01) ---------- */
+const PW_EVENTS=[
+  {d:'Feb 17',mon:'Feb 2026',dom:'Clinical',ev:'Progress note signed',c:'ACL',sev:'info'},
+  {d:'Feb 15',mon:'Feb 2026',dom:'Billing',ev:'Claim submitted',c:'ACL',sev:'info'},
+  {d:'Feb 12',mon:'Feb 2026',dom:'Authorization',ev:'Auth renewal requested',c:'Back',sev:'warn'},
+  {d:'Feb 5',mon:'Feb 2026',dom:'Billing',ev:'Claim denied · CO-197',c:'Back',sev:'crit'},
+  {d:'Feb 3',mon:'Feb 2026',dom:'Authorization',ev:'Auth expiring soon',c:'ACL',sev:'warn'},
+  {d:'Jan 28',mon:'Jan 2026',dom:'Clinical',ev:'POC recertification due',c:'ACL',sev:'warn'}
+];
+const PW_SEVPILL={info:'slate',warn:'amber',crit:'red'};
+const PW_LABEL={
+  summary:'The decision surface. Curated to what needs attention now, not everything on file.',
+  timeline:'The archive. Chronological, domain-grouped, plain language, with case tags.',
+  table:'Same events, a denser lens. One dataset, interchangeable views.'
+};
+function pwSummary(){
+  return `
+  <div class="pw-actions">
+    <div class="pw-al">Priority · action required</div>
+    <div class="pw-act crit"><span class="pw-mk crit"></span><div><div class="pw-at">Appeal denied claim</div><div class="pw-as">Back pain · CO-197 · $110 · assigned to M. Shah</div></div><span class="pw-go">Open</span></div>
+    <div class="pw-act warn"><span class="pw-mk warn"></span><div><div class="pw-at">Renew authorization</div><div class="pw-as">ACL · 2 of 12 visits left · assigned to M. Shah</div></div><span class="pw-go">Open</span></div>
+  </div>
+  <div class="pw-cards">
+    <div class="pw-card"><div class="pw-ct">Case status</div><div class="pw-cv">Active · visit 8 / 12</div><div class="pw-cs">Post-op PT · Right ACL</div></div>
+    <div class="pw-card"><div class="pw-ct">Authorization</div><div class="pw-cv">8 / 12 used</div><div class="pw-cs amber">Renew after visit 12</div></div>
+    <div class="pw-card"><div class="pw-ct">Plan of care</div><div class="pw-cv">Active · 2 / 4 goals</div><div class="pw-cs">Recert due Feb 28</div></div>
+  </div>`;
+}
+function pwTimeline(){
+  let html=`<div class="pw-tl">`,lastMon='';
+  PW_EVENTS.forEach(e=>{
+    if(e.mon!==lastMon){html+=`<div class="pw-tlmonth">${e.mon}</div>`;lastMon=e.mon;}
+    html+=`<div class="pw-tlrow"><span class="pw-mk ${e.sev}"></span><div class="pw-tlbody"><div class="pw-tltop"><span class="pw-tltitle">${e.ev}</span><span class="pw-tldate">${e.d}</span></div><div class="pw-tlmeta"><span class="pw-tag">${e.dom}</span><span class="pw-tag case">${e.c}</span></div></div></div>`;
+  });
+  return html+`</div>`;
+}
+function pwTable(){
+  let rows='';
+  PW_EVENTS.forEach(e=>{
+    const sev=e.sev.charAt(0).toUpperCase()+e.sev.slice(1);
+    rows+=`<tr><td class="mono">${e.d}</td><td>${e.dom}</td><td>${e.ev}</td><td>${e.c}</td><td><span class="pill ${PW_SEVPILL[e.sev]}">${sev}</span></td></tr>`;
+  });
+  return `<div class="pw-tblw"><table class="pw-tbl"><thead><tr><th>Date</th><th>Domain</th><th>Event</th><th>Case</th><th>Severity</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+}
+function pwRender(surf){
+  const body=document.getElementById('pwBody'); if(!body)return;
+  const html=surf==='summary'?pwSummary():surf==='timeline'?pwTimeline():pwTable();
+  body.classList.add('swapping');
+  setTimeout(()=>{body.innerHTML=html;body.classList.remove('swapping');}, rmq.matches?0:150);
+  const lbl=document.getElementById('pwLabel'); if(lbl) lbl.innerHTML=PW_LABEL[surf];
+}
+const pwSeg=document.getElementById('pwSeg');
+if(pwSeg){
+  pwSeg.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;[...pwSeg.children].forEach(x=>x.classList.remove('on'));b.classList.add('on');pwRender(b.dataset.surf);});
+  pwRender('summary');
+}
 </script>
 </body>
 </html>
